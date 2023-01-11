@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .conatiner{
+            display: grid;
+            grid-template-columns:100px repeat(4 ,1fr);
+            grid-template-rows: 120px 100px 200px 300px;
+            gap: 15px;
+
+            
+        }
+        .sidebar{
+            grid-row: 1 / -1;
+            background: rgb(204, 20, 20);
+            border-radius: 5px;
+        }
+        .header{
+            grid-column: 2 / -1;
+            background-color: rgb(201, 95, 95);
+            border-radius: 5px;
+        }
+        .stat-one, .stat-two, .stat-three, .stat-four{
+            background-color: blue;
+            border-radius: 5px;
+        }
+        .chart-one{
+            grid-column: 2/4;
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+        .chart-two{
+            grid-column: 4/-1;
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+        .overview{
+            grid-column: 2/5;
+            background-color: rgb(8, 149, 123);
+            border-radius: 5px;
+        }
+        .reminder{
+            grid-column: 5/-1;
+            background-color: rgb(8, 149, 123);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="conatiner">
+        <div class="sidebar">
+            <h3>sideber</h3>
+        </div>
+        <div class="header">
+            <h3>Header</h3>
+        </div>
+        <div class="stat-one">
+            <h3>Stat one</h3>
+        </div>
+        <div class="stat-two">
+            <h3>Stat two</h3>
+        </div>
+        <div class="stat-three">
+            <h3>Stat three</h3>
+        </div>
+        <div class="stat-four">
+            <h3>Stat Four</h3>
+        </div>
+        <div class="chart-one">
+            <h3>chart one</h3>
+        </div>
+        <div class="chart-two">
+            <h3>chart two</h3>
+        </div>
+        <div class="overview">
+            <h3>overview</h3>
+        </div>
+        <div class="reminder">
+            <h3>Reminder</h3>
+        </div>
+    </div>
+</body>
+</html>
